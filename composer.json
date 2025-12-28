@@ -1,0 +1,16 @@
+{
+    "name": "vikram/klippers",
+    "autoload": {
+        "psr-4": {
+            "Vikram\\Klippers\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Klippers"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.5"
+    }
+}
