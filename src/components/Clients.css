@@ -1,0 +1,146 @@
+/* Clients Section Styles */
+.clients {
+  padding: 80px 20px;
+  background: transparent;
+  min-height: 600px;
+}
+
+.clients-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.clients-carousel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.client-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 2rem;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.client-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.client-card:hover {
+  border-color: #00bfff;
+  background: transparent;
+  box-shadow: 0 10px 30px rgba(0, 191, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.client-card:hover img {
+  filter: brightness(1.1);
+  transform: scale(1.1);
+}
+
+.carousel-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #002e5f, #003d7a);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 46, 95, 0.3);
+}
+
+.carousel-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(0, 46, 95, 0.4);
+}
+
+.carousel-button:active {
+  transform: scale(0.95);
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 46, 95, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator.active {
+  background: linear-gradient(135deg, #002e5f, #00bfff);
+  width: 32px;
+  border-radius: 6px;
+}
+
+.indicator:hover {
+  background: rgba(0, 46, 95, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .clients-carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .carousel-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .clients {
+    padding: 60px 20px;
+  }
+
+  .clients-carousel-wrapper {
+    gap: 1rem;
+  }
+
+  .clients-carousel {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .client-card {
+    padding: 1.5rem;
+    min-height: 120px;
+  }
+
+  .carousel-button {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}

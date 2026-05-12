@@ -1,0 +1,59 @@
+/* Scroll To Top Button Styles */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+}
+
+.scroll-button {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #00bfff, #0099cc);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 191, 255, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 191, 255, 0.6);
+  background: linear-gradient(135deg, #0099cc, #007aa3);
+}
+
+.scroll-button:active {
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scroll-to-top {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .scroll-button {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+}
