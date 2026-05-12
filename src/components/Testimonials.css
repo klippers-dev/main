@@ -1,7 +1,7 @@
 /* Testimonials Section Styles */
 .testimonials {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: transparent;
   min-height: 600px;
 }
 
@@ -37,7 +37,7 @@
 .testimonial-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 40px rgba(0, 191, 255, 0.2);
-  border-left-color: #002e5f;
+  border-left-color: var(--text-primary);
 }
 
 .testimonial-stars {
@@ -47,7 +47,7 @@
 
 .testimonial-text {
   font-size: 1rem;
-  color: #666;
+  color: var(--text-secondary);
   line-height: 1.8;
   margin-bottom: 1.5rem;
   font-style: italic;
@@ -55,7 +55,7 @@
 
 .testimonial-author h4 {
   font-size: 1.1rem;
-  color: #002e5f;
+  color: var(--text-primary);
   margin-bottom: 0.3rem;
   font-weight: 700;
 }

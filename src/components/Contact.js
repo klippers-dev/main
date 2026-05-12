@@ -73,7 +73,7 @@ const Contact = () => {
 
         <div className="contact-wrapper">
           <motion.div
-            className="contact-map"
+            className="contact-map glass-panel"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -92,7 +92,7 @@ const Contact = () => {
           </motion.div>
 
           <motion.form
-            className="contact-form"
+            className="contact-form glass-panel"
             onSubmit={handleSubmit}
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -145,11 +145,11 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <div className="info-card">
+          <div className="info-card glass-panel">
             <h4>📍 Location</h4>
             <p>Vijayawada, Andhra Pradesh, India</p>
           </div>
-          <div className="info-card">
+          <div className="info-card glass-panel">
             <h4>✉️ Email</h4>
             <p>contactklippers@gmail.com</p>
           </div>

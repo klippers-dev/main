@@ -1,7 +1,7 @@
 /* FAQ Section Styles */
 .faq {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: transparent;
   min-height: 800px;
 }
 
@@ -21,15 +21,13 @@
 
 .faq-item {
   margin-bottom: 1.5rem;
-  border-radius: 10px;
   overflow: hidden;
-  background: transparent;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
 }
 
 .faq-item:hover {
-  box-shadow: 0 10px 30px rgba(0, 191, 255, 0.2);
+  transform: translateY(-5px);
+  border-color: var(--accent-secondary);
 }
 
 .faq-header {
@@ -43,19 +41,19 @@
   align-items: center;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #002e5f;
+  color: var(--text-primary);
   transition: all 0.3s ease;
   text-align: left;
 }
 
 .faq-header:hover {
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  background: transparent;
   padding-left: 2.5rem;
 }
 
 .faq-header.active {
-  background: linear-gradient(135deg, #002e5f, #003d7a);
-  color: white;
+  background: rgba(0, 191, 255, 0.1);
+  color: var(--accent-secondary);
 }
 
 .faq-icon {
@@ -76,7 +74,7 @@
 
 .faq-body p {
   padding: 1rem 0;
-  color: #666;
+  color: var(--text-secondary);
   line-height: 1.8;
   margin: 0;
   animation: fadeIn 0.3s ease-out;

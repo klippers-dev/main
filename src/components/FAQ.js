@@ -64,7 +64,7 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
-              className="faq-item"
+              className="faq-item glass-panel"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

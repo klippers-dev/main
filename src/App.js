@@ -4,7 +4,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import About from './components/About';
 import Careers from './components/Careers';
-import Clients from './components/Clients';
+
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
@@ -27,7 +27,7 @@ function Home() {
       <Services />
       <Products />
       <Testimonials />
-      <Clients />
+
       <Contact />
       <FAQ />
     </>

@@ -23,7 +23,7 @@
 }
 
 .client-card {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: transparent;
   padding: 2rem;
   border-radius: 15px;
   display: flex;

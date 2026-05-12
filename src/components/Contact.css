@@ -1,7 +1,7 @@
 /* Contact Section Styles */
 .contact {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: transparent;
   min-height: 800px;
 }
 
@@ -13,12 +13,12 @@
 }
 
 .contact-map {
-  border-radius: 15px;
+  padding: 10px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
+  padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -40,12 +40,12 @@
 
 .form-input:focus {
   outline: none;
-  border-color: #002e5f;
+  border-color: var(--text-primary);
   box-shadow: 0 0 0 3px rgba(0, 46, 95, 0.1);
 }
 
 .form-input::placeholder {
-  color: #999;
+  color: var(--text-secondary);
 }
 
 .contact-form button {
@@ -98,10 +98,7 @@
 }
 
 .info-card {
-  background: transparent;
   padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   cursor: pointer;
 }
@@ -113,13 +110,13 @@
 
 .info-card h4 {
   font-size: 1.3rem;
-  color: #002e5f;
+  color: var(--text-primary);
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .info-card p {
-  color: #666;
+  color: var(--text-secondary);
   line-height: 1.8;
   margin: 0;
 }
