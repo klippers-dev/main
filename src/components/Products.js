@@ -1,15 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope } from 'react-icons/fa';
 import './Products.css';
 
 const Products = () => {
-  const handleProductContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
 
   const products = [
     {
