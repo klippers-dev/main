@@ -5,21 +5,21 @@ import './Testimonials.css';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: 'Bhuvana',
+      name: 'Priya',
       position: 'Tech Lead',
-      text: 'Klippers transformed our digital presence completely. Highly professional and results-driven team!',
+      text: 'Kracko has been a fantastic addition to our game night. Engaging, competitive, and brilliantly designed.',
       rating: 5,
     },
     {
       name: 'Chandra',
       position: 'MD, Bunker\'s Bell',
-      text: 'Outstanding service! They delivered exactly what we needed on time and within budget.',
+      text: 'Qravio transformed our restaurant operations completely. The QR menu system is seamless and incredibly easy to manage!',
       rating: 5,
     },
     {
       name: 'Abhishek',
       position: 'Startup Founder',
-      text: 'The team is incredibly talented and easy to work with. Highly recommended!',
+      text: 'Specter gives me the peace of mind I need for my team\'s credentials. A highly secure and reliable password manager.',
       rating: 5,
     },
   ];

@@ -13,7 +13,6 @@ import Navigation from './components/Navigation';
 import Privacy from './components/Privacy';
 import Products from './components/Products';
 import ScrollToTop from './components/ScrollToTop';
-import Services from './components/Services';
 import Terms from './components/Terms';
 import Testimonials from './components/Testimonials';
 import AnimatedBackground from './components/AnimatedBackground';
@@ -24,7 +23,6 @@ function Home() {
     <>
       <Hero />
       <About />
-      <Services />
       <Products />
       <Testimonials />
 

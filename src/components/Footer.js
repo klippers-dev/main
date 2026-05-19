@@ -60,22 +60,18 @@ const Footer = () => {
               <h4>About Us</h4>
               <ul>
                 <li>
-                  <a href="#home">
+                  <a href="/#home">
                     <FaArrowRight /> Home
                   </a>
                 </li>
                 <li>
-                  <a href="#about">
+                  <a href="/#about">
                     <FaArrowRight /> About us
                   </a>
                 </li>
+
                 <li>
-                  <a href="#services">
-                    <FaArrowRight /> Our services
-                  </a>
-                </li>
-                <li>
-                  <a href="#products">
+                  <a href="/#products">
                     <FaArrowRight /> Our products
                   </a>
                 </li>
@@ -101,12 +97,12 @@ const Footer = () => {
                   </RouterLink>
                 </li>
                 <li>
-                  <a href="#contact">
+                  <a href="/#contact">
                     <FaArrowRight /> Contact
                   </a>
                 </li>
                 <li>
-                  <a href="#faq">
+                  <a href="/#faq">
                     <FaArrowRight /> FAQ
                   </a>
                 </li>

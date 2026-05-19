@@ -1,11 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import {
-  FaEnvelope,
-  FaGamepad,
-  FaUtensils,
-  FaLock,
-} from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 import './Products.css';
 
 const Products = () => {
@@ -18,28 +13,28 @@ const Products = () => {
 
   const products = [
     {
-      icon: <FaEnvelope />,
+      icon: '/images/golden.png',
       title: 'Digital Invitations',
       description:
         'Create beautiful, customized digital wedding invitations that are eco-friendly and easy to share. Perfect for leaving lasting impressions on your guests.',
       color: '#a8e6cf',
     },
     {
-      icon: <FaGamepad />,
+      icon: '/images/kracko-logo.png',
       title: 'KRACKO',
       description:
         'An exciting 4-digit number guessing game featuring Practice, Dual Player, and Multiplayer modes. Combine logic and strategy to outsmart your opponents.',
       color: '#ff6b6b',
     },
     {
-      icon: <FaUtensils />,
-      title: 'Tabletap',
+      icon: 'https://tabletap-klippers.web.app/qravio-icon.png',
+      title: 'Qravio',
       description:
         'A digital menu platform that helps restaurants create QR codes for customers. Simplify menu browsing and ordering while managing menus efficiently.',
       color: '#ffd93d',
     },
     {
-      icon: <FaLock />,
+      icon: 'https://specter-klip.vercel.app/specter-favicon.svg',
       title: 'Specter',
       description:
         'A secure password manager stored locally in your system cache with encryption. Share and download passwords safely with master password protection.',
@@ -97,14 +92,15 @@ const Products = () => {
               variants={itemVariants}
               whileHover={{ y: -10 }}
             >
-              <div className="product-icon" style={{ color: product.color }}>
-                {product.icon}
+              <div className="product-icon-wrapper" style={{ color: product.color }}>
+                {typeof product.icon === 'string' ? (
+                  <img src={product.icon} alt={`${product.title} icon`} className="product-icon-img" onError={(e) => { e.target.style.display = 'none'; }} />
+                ) : (
+                  <div className="product-icon">{product.icon}</div>
+                )}
               </div>
               <h3>{product.title}</h3>
               <p>{product.description}</p>
-              <button className="product-btn" onClick={handleProductContact}>
-                Learn More
-              </button>
               {product.title === 'KRACKO' && (
                 <a
                   href="https://kracko.in"
@@ -125,7 +121,7 @@ const Products = () => {
                   Access
                 </a>
               )}
-              {product.title === 'Tabletap' && (
+              {product.title === 'Qravio' && (
                 <a
                   href="https://tabletap-klippers.web.app/owner"
                   target="_blank"

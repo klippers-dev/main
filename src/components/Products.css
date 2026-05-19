@@ -48,14 +48,21 @@
   border-color: var(--accent-secondary);
 }
 
-.product-icon {
-  font-size: 3.5rem;
+.product-icon-wrapper {
   margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  height: 56px;
+}
+
+.product-icon-img {
+  height: 100%;
+  max-width: 56px;
+  object-fit: contain;
   transition: all 0.3s ease;
 }
 
-.product-card:hover .product-icon {
-  transform: scale(1.2) rotate(15deg);
+.product-card:hover .product-icon-img {
+  transform: scale(1.2) rotate(10deg);
   filter: drop-shadow(0 5px 15px rgba(0, 191, 255, 0.3));
 }
 

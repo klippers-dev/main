@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   const handleLearnMore = () => {
-    const element = document.getElementById('about');
+    const element = document.getElementById('products');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -49,11 +49,11 @@ const Hero = () => {
             Humanizing Your <span>Digital Presence</span>
           </motion.h1>
           <motion.p variants={itemVariants} className="hero-subtitle">
-            We blend innovative technology with a human-centric approach to build digital experiences that resonate, engage, and convert.
+            We build and scale innovative digital products that resonate, engage, and solve real-world problems.
           </motion.p>
           <motion.div variants={itemVariants} className="hero-buttons">
             <button className="btn-primary" onClick={handleGetStarted}>Let's Talk</button>
-            <button className="btn-outline" onClick={handleLearnMore}>Our Work</button>
+            <button className="btn-outline" onClick={handleLearnMore}>Our Products</button>
           </motion.div>
         </motion.div>
 

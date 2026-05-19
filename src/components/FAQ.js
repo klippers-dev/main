@@ -8,34 +8,34 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'How much will it cost?',
+      question: 'How do I access your products?',
       answer:
-        'To get a better idea of the cost of what you want to build, give us a quick phone call. We\'ll ask you a few questions about the nature of the site, what sort of interactivity the site will have, your graphic design needs, etc. Then we\'ll be able to give you a ballpark figure.',
+        'You can access our products directly through the links provided in the Our Products section. Most of our products are web-based and can be accessed from any modern browser without downloading any software.',
     },
     {
-      question: 'How long it takes to design?',
+      question: 'Are your products free to use?',
       answer:
-        'The time limit of any assignment is normally dictated by the client. If you have any time limit in mind we will attempt to assemble it for you. The main general delay in the making of a website is waiting for the content of the pages to be sent to us by the client.',
+        'Many of our products like Specter and Kracko offer free tiers or are completely free to use. For enterprise solutions like Tabletap, we offer custom pricing tailored to your restaurant\'s specific needs.',
     },
     {
-      question: 'How do I associate with Klippers?',
+      question: 'Do you provide support for your products?',
       answer:
-        'The process begins when you contact us with your requirements. We analyze your requirements and respond to you. On the basis of the further discussion, you can choose an engagement model that suits you the best.',
+        'Yes! We are dedicated to ensuring you have a smooth experience. If you encounter any issues or have questions while using our products, you can reach out to us through the Contact section below.',
     },
     {
-      question: 'What all are included in Engineering Projects?',
+      question: 'Is my data secure when using your products?',
       answer:
-        'Our engineering projects include AI, ML and Deep Learning–based solutions, along with software development projects. We provide complete support from project development and implementation to documentation and final submission.',
+        'Security is our top priority. Products like Specter are designed with local encryption, meaning your sensitive data never leaves your device. All our platforms follow industry-standard security protocols.',
     },
     {
-      question: 'Can you help my current site look more professional?',
+      question: 'Can I request a new feature for a product?',
       answer:
-        'Yes. Give us your requirements and we have experienced expertise to help you give a new professional look that really wonders!',
+        'Absolutely! We are constantly evolving our products based on user feedback. If you have an idea that could improve the experience, please let us know through our contact form.',
     },
     {
-      question: 'When do I pay?',
+      question: 'Do you build custom products for clients?',
       answer:
-        'For most projects, equal payments are made at the start, midway, and the end of the project, but we can work with you to set up a schedule that meets your needs.',
+        'While our primary focus is developing our own innovative product suite, we occasionally collaborate on exciting ventures. Feel free to contact us to discuss any unique opportunities.',
     },
   ];
 
@@ -57,7 +57,7 @@ const FAQ = () => {
         </motion.h2>
 
         <p className="section-subtitle">
-          Find answers to common questions about our services
+          Find answers to common questions about our products
         </p>
 
         <div className="faq-container">
