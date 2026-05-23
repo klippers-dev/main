@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
+import { useState } from 'react';
 import {
-  FaFacebook,
-  FaTwitter,
-  FaLinkedin,
-  FaInstagram,
   FaArrowRight,
+  FaInstagram,
+  FaLinkedin,
 } from 'react-icons/fa';
+import { Link as RouterLink } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -127,20 +125,12 @@ const Footer = () => {
               <h4>Follow Us</h4>
               <div className="social-links">
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://x.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-link"
                 >
-                  <FaFacebook />
-                </a>
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="social-link"
-                >
-                  <FaTwitter />
+                  <span className="social-icon-x">X</span>
                 </a>
                 <a
                   href="https://www.linkedin.com/"
@@ -151,7 +141,7 @@ const Footer = () => {
                   <FaLinkedin />
                 </a>
                 <a
-                  href="https://www.instagram.com/the_klippers"
+                  href="https://www.instagram.com/the_klippers/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social-link"
